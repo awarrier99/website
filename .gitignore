@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+build/
+.env
+public/bundle.js
+assets/
+.DS_Store

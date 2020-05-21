@@ -1,0 +1,70 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "build/server/app.js",
+  "scripts": {
+    "dev": "npm run lint && npm run client-types && npm run start:dev",
+    "prod": "npm run lint && npm run compile && npm run build && npm start",
+    "compile": "tsc -b ./src/server",
+    "client-types": "tsc -p ./src/client",
+    "build": "rm -f ./public/*bundle.js && npm run client-types && webpack --config webpack.config.prod.js --mode production",
+    "start": "NODE_ENV=production node -r dotenv/config ./build/server/app.js",
+    "start:dev": "NODE_ENV=development ts-node-dev -r dotenv/config --watch ./src/server --transpileOnly ./src/server/app.ts",
+    "lint": "eslint --ext .ts,.tsx src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awarrier99/website.git"
+  },
+  "author": "Ashvin Warrier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awarrier99/website/issues"
+  },
+  "homepage": "https://github.com/awarrier99/website#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@types/material-ui": "^0.21.7",
+    "@types/morgan": "^1.9.0",
+    "@types/react-router": "^5.1.7",
+    "@types/react-router-dom": "^5.1.5",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.4",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/webpack-dev-middleware": "^3.7.1",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "style-loader": "^1.2.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-middleware": "^3.7.2"
+  }
+}
