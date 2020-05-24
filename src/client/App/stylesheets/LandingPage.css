@@ -1,0 +1,34 @@
+@keyframes illuminate {
+  from { opacity: 0; }
+  to { opacity: 100%; }
+}
+
+.landing-container {
+  background-color: #000000;
+}
+
+.landing {
+  z-index: 110;
+}
+
+.landing-background {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 90;
+  background: no-repeat center top 75px/cover url('/images/landing-background.jpg');
+  /*animation: illuminate 2.5s ease-in 1s;*/
+  /*animation-fill-mode: both;*/
+}
+
+.landing-title {
+  font-weight: 400;
+  font-size: 7.75rem;
+  letter-spacing: 4px;
+}
+
+.landing-subtitle {
+  font-style: italic;
+  animation: illuminate 2s ease-in 0.5s;
+  animation-fill-mode: both;
+}

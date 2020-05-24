@@ -3,5 +3,6 @@ node_modules/
 build/
 .env
 public/bundle.js
+public/images/
 assets/
 .DS_Store

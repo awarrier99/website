@@ -3,16 +3,6 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
-#root, #login-root {
-  height: 100%;
-  width: 100%;
-}
-
 .full-height {
   height: 100%;
 }
@@ -26,6 +16,22 @@ html, body {
   height: 100%;
 }
 
-.MuiCardMedia-img {
-  object-fit: contain !important;
+.fullscreen {
+  height: 100vh;
+}
+
+.MuiPaper-elevation1 {
+  background-color: #1e1e1e;
+}
+
+.MuiPaper-elevation2 {
+  background-color: #222222;
+}
+
+.MuiPaper-elevation3 {
+  background-color: #242424;
+}
+
+.MuiPaper-elevation4 {
+  background-color: #272727;
 }
