@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import type { ReactNode } from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { ErrorOutline } from '@material-ui/icons';
+import type { ReactNode } from 'react';
 
 class NotFound extends Component<{}, {}> {
   render(): ReactNode {

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import type { ReactNode } from 'react';
 import { Avatar, Card, CardContent, Divider, Grid, Typography } from '@material-ui/core';
+import type { ReactNode } from 'react';
 import '../stylesheets/AboutMe.css';
+import profile from '../images/profile.jpg';
 
 class AboutMe extends Component<{}, {}> {
   render(): ReactNode {
@@ -24,7 +25,7 @@ class AboutMe extends Component<{}, {}> {
                 </Grid>
                 <Grid style={{ flexGrow: 1 }} justify="center" alignItems="center" container>
                   <Grid item>
-                    <Avatar style={{ width: 300, height: 300, opacity: 0.8 }} src="/images/profile.jpg" alt="Ashvin Warrier" />
+                    <Avatar style={{ width: 300, height: 300, opacity: 0.8 }} src={profile} alt="Ashvin Warrier" />
                   </Grid>
                 </Grid>
                 <Grid style={{ flexGrow: 2 }} justify="center" alignItems="center" container>

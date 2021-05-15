@@ -16,7 +16,7 @@
   height: 110vh;
   width: 100%;
   z-index: 90;
-  background: no-repeat center/cover rgba(18, 18, 18, 0.95) url('/images/background3.jpg');
+  background: no-repeat center/cover rgba(18, 18, 18, 0.95) url('../images/background3.jpg');
   background-blend-mode: darken;
 }
 

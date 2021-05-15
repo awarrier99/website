@@ -23,6 +23,7 @@
     "react/jsx-props-no-spreading": "off",
     "arrow-parens": ["error", "as-needed"],
     "no-underscore-dangle": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "@typescript-eslint/lines-between-class-members": "off"
   }
 }

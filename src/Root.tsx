@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import type { ReactNode } from 'react';
 import { CssBaseline, MuiThemeProvider, StylesProvider } from '@material-ui/core';
+import type { ReactNode } from 'react';
 import App from './App/App';
 import theme from './theme';
 import './Root.css';

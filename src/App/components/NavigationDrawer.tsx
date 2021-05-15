@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import type { ReactNode } from 'react';
 import { Divider, Drawer, Grid, IconButton, List, ListItem, ListItemIcon, ListItemText, Toolbar, Typography } from '@material-ui/core';
 import { ChevronLeft, Home, Info } from '@material-ui/icons';
+import type { ReactNode } from 'react';
 
 export interface NavigationDrawerProps {
   open: boolean,
@@ -19,7 +19,7 @@ class NavigationDrawer extends Component<NavigationDrawerProps, NavigationDrawer
     super(props);
 
     this.state = {
-      selected: 'home'
+      selected: 'home',
     };
   }
 
@@ -61,13 +61,13 @@ class NavigationDrawer extends Component<NavigationDrawerProps, NavigationDrawer
           <Toolbar>
             <Grid justify="space-between" alignItems="center" container>
               <Grid item>
-                <Typography color="primary" variant="h6">
+                <Typography color="textPrimary" variant="h6">
                   Section
                 </Typography>
               </Grid>
               <Grid item>
                 <IconButton onClick={onClose}>
-                  <ChevronLeft color="secondary" />
+                  <ChevronLeft color="primary" />
                 </IconButton>
               </Grid>
             </Grid>
@@ -76,7 +76,7 @@ class NavigationDrawer extends Component<NavigationDrawerProps, NavigationDrawer
           <List>
             <ListItem selected={selected === 'home'} onClick={this.homeScroll} button divider>
               <ListItemIcon>
-                <Home color="secondary" />
+                <Home color="primary" />
               </ListItemIcon>
               <ListItemText>
                 <Typography color="textSecondary" variant="body1">
@@ -86,7 +86,7 @@ class NavigationDrawer extends Component<NavigationDrawerProps, NavigationDrawer
             </ListItem>
             <ListItem selected={selected === 'aboutMe'} onClick={this.aboutMeScroll} button>
               <ListItemIcon>
-                <Info color="secondary" />
+                <Info color="primary" />
               </ListItemIcon>
               <ListItemText>
                 <Typography color="textSecondary" variant="body1">

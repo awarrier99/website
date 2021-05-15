@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import type { ReactNode } from 'react';
 import { Typography } from '@material-ui/core';
+import type { ReactNode } from 'react';
 import type { TypographyProps } from '@material-ui/core';
 import '../stylesheets/GradientFadeTypography.css';
 

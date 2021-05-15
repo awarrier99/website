@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import type { ReactNode } from 'react';
 import { Container, Grid } from '@material-ui/core';
+import type { ReactNode } from 'react';
 import AboutMe from '../components/AboutMe';
 import LandingPage from '../components/LandingPage';
 

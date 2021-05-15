@@ -1,0 +1,15 @@
+{
+  "short_name": "Website",
+  "name": "Ashvin Warrier's Website",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "226x198",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffab91",
+  "background_color": "#121212"
+}

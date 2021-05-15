@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import type { ReactNode } from 'react';
 import { Button, Grid, Typography } from '@material-ui/core';
+import type { ReactNode } from 'react';
 import GradientFadeTypography from './GradientFadeTypography';
 import '../stylesheets/LandingPage.css';
 

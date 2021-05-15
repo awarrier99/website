@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import type { ReactNode, RefObject } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
+import type { ReactNode, RefObject } from 'react';
 import Home from './containers/Home';
 import Navigation from './components/Navigation';
 import NotFound from './containers/NotFound';
