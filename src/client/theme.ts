@@ -4,18 +4,18 @@ export default createMuiTheme({
   palette: {
     type: 'dark',
     primary: {
-      main: '#D94F30',
+      main: '#ffab91',
     },
     secondary: {
-      main: '#D9A330',
+      main: '#a1887f',
     },
     background: {
-      default: '#000000',
+      default: '#121212',
       paper: '#121212'
     },
     text: {
-      primary: 'rgba(255, 255, 255, 0.85)',
-      secondary: 'rgba(255, 255, 255, 0.6)'
+      primary: '#ffffff',
+      secondary: 'rgba(255, 255, 255, 0.87)'
     }
   },
   typography: {

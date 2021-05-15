@@ -9,7 +9,7 @@ class Home extends Component<{}, {}> {
     return (
       <Grid direction="column" container>
         <LandingPage />
-        <Container className="fullscreen">
+        <Container className="fullscreen" maxWidth={false}>
           <AboutMe />
         </Container>
       </Grid>

@@ -25,13 +25,29 @@
 }
 
 .MuiPaper-elevation2 {
-  background-color: #222222;
+  background-color: #232323;
 }
 
 .MuiPaper-elevation3 {
-  background-color: #242424;
+  background-color: #252525;
 }
 
 .MuiPaper-elevation4 {
   background-color: #272727;
+}
+
+.MuiPaper-elevation6 {
+  background-color: #2c2c2c;
+}
+
+.MuiPaper-elevation8 {
+  background-color: #2e2e2e;
+}
+
+.MuiPaper-elevation12 {
+  background-color: #333333;
+}
+
+.MuiPaper-elevation16 {
+  background-color: #363636;
 }

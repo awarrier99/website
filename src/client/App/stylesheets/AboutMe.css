@@ -1,7 +1,7 @@
 .transition {
   position: absolute;
   top: calc(110vh - 200px);
-  background: linear-gradient(transparent 20%, #000000 90%);
+  background: linear-gradient(transparent, #121212);
   height: 200px;
   width: 100vw;
   z-index: 100;

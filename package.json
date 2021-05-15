@@ -5,13 +5,14 @@
   "main": "build/server/app.js",
   "scripts": {
     "dev": "npm run lint && npm run client-types && npm run start:dev",
-    "prod": "npm run lint && npm run compile && npm run build && npm start",
-    "compile": "tsc -b ./src/server",
+    "prod": "npm run lint && npm run build && npm start",
     "client-types": "tsc -p ./src/client",
-    "build": "rm -f ./public/*bundle.js && npm run client-types && webpack --config webpack.config.prod.js --mode production",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:frontend": "rm -f ./public/*bundle.js && npm run client-types && webpack --config webpack.config.prod.js --mode production",
+    "build:backend": "tsc -b ./src/server",
     "start": "NODE_ENV=production node -r dotenv/config ./build/server/app.js",
     "start:dev": "NODE_ENV=development ts-node-dev -r dotenv/config --watch ./src/server --transpileOnly ./src/server/app.ts",
-    "lint": "eslint --ext .ts,.tsx src"
+    "lint": "eslint --fix --ext .ts,.tsx src"
   },
   "repository": {
     "type": "git",

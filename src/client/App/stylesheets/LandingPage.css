@@ -1,6 +1,6 @@
-@keyframes illuminate {
-  from { opacity: 0; }
-  to { opacity: 100%; }
+@keyframes growOut {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
 }
 
 .landing-container {
@@ -13,21 +13,25 @@
 
 .landing-background {
   position: absolute;
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   z-index: 90;
-  background: no-repeat center top 75px/cover url('/images/landing-background.jpg');
-  /*animation: illuminate 2.5s ease-in 1s;*/
-  /*animation-fill-mode: both;*/
+  background: no-repeat center/cover rgba(18, 18, 18, 0.95) url('/images/background3.jpg');
+  background-blend-mode: darken;
+}
+
+.landing-titles {
+  margin: 0 50px;
 }
 
 .landing-title {
-  font-weight: 400;
-  font-size: 7.75rem;
-  letter-spacing: 4px;
+  font-weight: 200;
+  font-size: 10.75rem;
+  letter-spacing: 2px;
 }
 
 .landing-subtitle {
+  font-family: Montserrat, sans-serif;
   font-style: italic;
   animation: illuminate 2s ease-in 0.5s;
   animation-fill-mode: both;
